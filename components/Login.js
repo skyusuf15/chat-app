@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 import { login } from '../store';
 
-export default class Login extends Component {
+export default class Login extends React.Component {
     constructor() {
         super();
         this.state = {
