@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import store from './store';
-import { createStackNavigator } from "react-navigation";
+import { createStackNavigator, createAppContainer } from "react-navigation";
 import Login from './components/Login';
 import Users from './components/Users';
 import Chat from './components/Chat';
@@ -17,7 +17,7 @@ export default class App extends React.Component {
   }
 }
 
-const RootStack = createStackNavigator(
+const RootStack = createAppContainer(createStackNavigator(
   {
     Login: {
       screen: Login
@@ -35,4 +35,4 @@ const RootStack = createStackNavigator(
       headerTitle: 'Chat!'
     }
   }
-);
+));

@@ -33,7 +33,7 @@ export default class Login extends React.Component {
                     style={ styles.input }
                 />
 
-                <Text>Password:</Text>
+                <Text style={ styles.text }>Password:</Text>
                 <TextInput onChangeText={ value => this.handleChange('password', value) } 
                     secureTextEntry
                     returnKeyType='go'

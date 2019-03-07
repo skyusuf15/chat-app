@@ -35,7 +35,9 @@ class Users extends React.Component {
 const mapState = state => ({
     users: state.users.filter(user => user.id !== state.user.id)
 });
+
 export default connect(mapState)(Users);
+
 const styles = StyleSheet.create({
     container: {
         justifyContent: 'center',
